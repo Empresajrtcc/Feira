@@ -331,15 +331,15 @@
 
         <div class="info">
           <div class="information">
-            <img src="img/location.png" class="icon" alt="" />
+            <i class='bx bxs-location-plus' ></i>
             <p>R. Bélgica, 88 - Jardim Alvorada, Ribeirão Pires - SP, 09402-060</p>
           </div>
           <div class="information">
-            <img src="img/email.png" class="icon" alt="" />
+            <i class='bx bxs-envelope' ></i>
             <p>sirley@gmail.com</p>
           </div>
           <div class="information">
-            <img src="img/phone.png" class="icon" alt="" />
+            <i class='bx bxs-phone'></i>
             <p>+55 (11)99392-8528</p>
           </div>
         </div>
@@ -358,7 +358,7 @@
         <span class="circle one"></span>
         <span class="circle two"></span>
 
-        <form id="myForm" action="acesso/enviar.php" autocomplete="off">
+        <form action="acesso/enviar.php" autocomplete="off">
           <h3 class="title">Fale conosco</h3>
           <div class="input-container">
             <input type="text" name="name" class="input" />
@@ -380,9 +380,8 @@
             <label for="text">Mensagem</label>
             <span>Mensagem</span>
           </div>
-          <button type="submit" class="btn">Enviar</button>
+          <button type="submit" class="btn">Enviar </button>
         </form>
-        
       </div>
     </div>
   </div>
@@ -404,18 +403,6 @@
               numeroFormatado += `-${numerosArray.slice(7,11).join("")}`;
            } telefone.value = numeroFormatado;
       });
-          document.getElementById('myForm').addEventListener('submit', function(e) {
-            e.preventDefault(); // Impede o envio padrão do formulário
-
-            // Aqui você pode adicionar a lógica para enviar os dados para o seu servidor, se necessário
-
-            // Limpa os campos do formulário
-            document.getElementById('myForm').reset();
-
-            // Exibe o alerta
-            alert('Formulário enviado com sucesso');
-          });
-      
 </script>
 <!--FIM ENTRAR EM CONTATO-->
   
